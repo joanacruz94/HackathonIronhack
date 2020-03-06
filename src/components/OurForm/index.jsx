@@ -9,43 +9,43 @@ class OurForm extends Component {
         super();
         this.idInput = 0;
         this.state = {
-            q1: '',
-            q2: '',
-            q3: '',
-            q4: '',
-            q5: '',
-            q6: '',
-            q7: '',
-            q8: '',
-            q9: '',
-            q10: '',
-            q11: '',
-            q12: '',
-            q13: '',
-            q14: '',
-            q15: '',
-            q16: '',
-            q17: true,
-            q18: true,
-            q19: true,
-            q20: true,
-            q21: true,
-            q22: true,
-            q23: true,
-            q24: true,
-            q25: true,
-            q26: true,
-            q27: true
+            q1: 0,
+            q2: 0,
+            q3: 0,
+            q4: 0,
+            q5: 0,
+            q6: 0,
+            q7: 1,
+            q8: 1,
+            q9: 1,
+            q10: 1,
+            q11: 1,
+            q12: 1,
+            q13: 1,
+            q14: 1,
+            q15: 1,
+            q16: 1,
+            q17: 1,
+            q18: 1,
+            q19: 1,
+            q20: 1,
+            q21: 1,
+            q22: 1,
+            q23: 1,
+            q24: 1,
+            q25: 1,
+            q26: 1,
+            q27: 1
         }
         this.keys = this.createKeys();
         this.changeAnswersState = this.changeAnswersState.bind(this);
         this.handleSubmission = this.handleSubmission.bind(this);
     }
 
-  incrementId() {
-    this.idInput++;
-    return this.idInput;
-  }
+    incrementId() {
+        this.idInput++;
+        return this.idInput;
+    }
 
     changeAnswersState(inputName, value){
         this.setState(previousState => {
@@ -57,8 +57,7 @@ class OurForm extends Component {
 
     handleSubmission(){
         const submission = {...this.state};
-
-        console.log(submission);
+        this.props.addData(submission);
     }
 
     createKeys(){
@@ -68,9 +67,8 @@ class OurForm extends Component {
     }
 
     render() {
-        const { dataForm } = this.props;
+        const { dataForm, data } = this.props;
         const elements = dataForm[0].pages[0].elements;
-
         return (
             <div>
                 <Form controlId="formBasic">
