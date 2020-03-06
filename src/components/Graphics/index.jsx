@@ -26,9 +26,42 @@ export class Graphics extends Component {
             {/* {data.map(entry => (
               <p>{this.average(entry)}</p>
             ))} */}
-            <img className="graph" src="/ratio.png" />
-            <p>Dummy text</p>
-            <img className="graph" src="/variables.png" />
+            <figure>
+              <div className="images">
+                <img className="graph" src="/ratio.png" />
+                <img className="graph" src="/variables.png" />
+              </div>
+              <figcaption>
+                <strong>Q17:</strong>Does you company have a target for the gender composition of
+                governing bodies?
+                <strong>Q18:</strong>Do you think women are as likely as male to get promoted?
+                <br />
+                <strong>Q19:</strong>Do you think women are as likely as men to resign?
+                <br />
+                <strong>Q20:</strong>Do you think women are as likely as men to get fired?
+                <br />
+                <strong>Q21:</strong>Do you think or organisation is concerned regarding gender
+                inequalities?
+                <br /> <strong>Q22:</strong>Has your company done anything to address gender
+                inequalities?
+                <br />
+                <strong>Q23:</strong>Would your employer provide your parental leave?
+                <br />
+                <strong>Q24:</strong>Would you be penalised if you were to have a child?
+                <br />
+                <strong>Q25:</strong>Have you ever been harassed in your workplace?
+                <br />
+                <strong>Q26:</strong>Does your company have the right support system to handle this
+                kind of situations?
+                <br />
+                <strong>Q27:</strong>Does your company have support systems for people that suffer
+                domestic abuse?
+              </figcaption>
+            </figure>
+            <p>
+              As you can see there are many people who may or may not of shared similar, if not the
+              same experiences as you!{' '}
+            </p>
           </div>
         </div>
 
