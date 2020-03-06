@@ -55,10 +55,11 @@ class OurForm extends Component {
     });
   }
 
-  handleSubmission() {
-    const submission = { ...this.state };
-    this.props.addData(submission);
-  }
+    handleSubmission(){
+        const submission = {...this.state};
+        this.props.addData(submission);
+        this.handleChange();
+    }
 
   createKeys() {
     let array = [];
@@ -66,7 +67,11 @@ class OurForm extends Component {
     return array;
   }
 
-  render() {
+handleChange(){
+  this.props.changeComponent('activeHome', 'activeForm');
+}  
+
+render() {
     const { dataForm, data } = this.props;
     const elements = dataForm[0].pages[0].elements;
     return (

@@ -66,8 +66,8 @@ class App extends Component {
         />
         {(this.state.activeHome && <Home />) ||
           (this.state.activeAdvice && <Advice />) ||
-          (this.state.activeForm && <OurForm dataForm={dataForm} data={data} addData={(submission) => this.addData(submission)}/>) ||
-          (this.state.activeGraphics && <Graphics data={this.state.data}/>)}
+          (this.state.activeForm && <OurForm dataForm={dataForm} data={data} addData={(submission) => this.addData(submission)}           changeComponent={(active, noactive) => this.changeActiveComponent(active, noactive)}/>) ||
+          (this.state.activeGraphics && (<Graphics data={this.state.data}/>))}
       </div>
     );
   }
