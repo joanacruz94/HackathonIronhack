@@ -9,15 +9,10 @@
     margin: 5% 0;
   }
   .adviceBox {
-    h2 {
-      margin: 2%;
-      text-align: center;
-    }
-    p {
-      margin: 20px;
-    }
-  }
-  .adviceBox-white {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     h2 {
       margin: 2%;
       text-align: center;
@@ -30,6 +25,31 @@
 
 @media only screen and (min-width: 700px) {
   .adviceDisplay {
+    display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+
+    .adviceBox {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10%;
+      border-radius: 2em;
+    }
+    .adviceBox:hover {
+      transition: ease-in-out all 0.4s;
+      -moz-transition: ease-in-out all 0.4s;
+      -webkit-transition: ease-in-out all 0.4s;
+      color: #83acd8;
+      background-color: #f4f4f4;
+      text-decoration: none;
+      font-weight: bold;
+      transform: translateY(-20px);
+    }
   }
 }

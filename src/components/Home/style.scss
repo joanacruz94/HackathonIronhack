@@ -1,13 +1,14 @@
 .homeDisplay {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #ffe2fc;
 }
 
 .homeStatement {
   margin: auto 0;
   text-align: center;
-  padding-top: 10%;
   color: black;
+  padding: 30% 0;
+  border-bottom: 1px solid grey;
   h4 {
     color: grey;
     font-style: italic;
@@ -20,6 +21,7 @@
   line-height: 2em;
   margin: 20px 2%;
   padding: 2%;
+  margin-bottom: 20px;
   border-radius: 1em;
   text-align: center;
   h2 {
@@ -33,5 +35,23 @@
     text-align: center;
     justify-content: center;
     margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .homeDisplay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .homeStatement {
+      padding: 25% 0;
+      h1 {
+        font-size: 64px;
+      }
+    }
+    .homeDescription {
+      width: 50rem;
+    }
   }
 }
