@@ -1,4 +1,6 @@
 # Dependency directories
 node_modules
+
+
 .DS_Store
-.DS_Store
+/Data/.ipynb_checkpoints/*
