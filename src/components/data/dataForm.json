@@ -1,0 +1,187 @@
+[
+    {
+    "title": "Women Test survey",
+    "pages": [
+     {
+      "name": "page1",
+      "elements": [
+       {
+        "type": "text",
+        "name": "First name"
+       },
+       {
+        "type": "text",
+        "name": "Last name"
+       },
+       {
+        "type": "text",
+        "name": "Country"
+       },
+       {
+        "type": "text",
+        "name": "City"
+       },
+       {
+        "type": "text",
+        "name": "Region"
+       },
+       {
+        "type": "text",
+        "name": "Company"
+       },
+       {
+        "type": "text",
+        "name": "Industry"
+       },
+       {
+        "type": "dropdown",
+        "name": "question2",
+        "title": "Gender",
+        "choices": [
+         {
+          "value": "item1",
+          "text": "Male"
+         },
+         {
+          "value": "item2",
+          "text": "Female"
+         },
+         {
+          "value": "item3",
+          "text": "Other"
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "name": "Age",
+        "inputType": "number"
+       },
+       {
+        "type": "dropdown",
+        "name": "question1",
+        "title": "What kind of job do you have?",
+        "choices": [
+         {
+          "value": "item1",
+          "text": "Freelance"
+         },
+         {
+          "value": "item2",
+          "text": "Part-Time"
+         },
+         {
+          "value": "item3",
+          "text": "Full-Time"
+         }
+        ]
+       },
+       {
+        "type": "text",
+        "name": "question3",
+        "title": "How much do you earn in a year?",
+        "inputType": "number"
+       },
+       {
+        "type": "text",
+        "name": "question4",
+        "title": "How much would a man in your position earn in a year?",
+        "inputType": "number"
+       },
+       {
+        "type": "text",
+        "name": "question5",
+        "title": "Percentage of female workers in your company?",
+        "inputType": "number"
+       },
+       {
+        "type": "text",
+        "name": "question6",
+        "title": "Percentage of female administrators in your company?",
+        "inputType": "number"
+       },
+       {
+        "type": "text",
+        "name": "Percentage of female managers?",
+        "inputType": "number"
+       },
+       {
+        "type": "text",
+        "name": "Percentage of female non-managers?",
+        "inputType": "number"
+       },
+       {
+        "type": "boolean",
+        "name": "Does you company have a target for the gender composition of governing bodies?",
+        "labelTrue": "Yes",
+        "labelFalse": "No"
+       },
+       {
+        "type": "boolean",
+        "name": "Do you think women are as likely as male to get promoted?",
+        "title": "Do you think women are as likely as men to get promoted?",
+        "labelTrue": "Yes",
+        "labelFalse": "No"
+       },
+       {
+        "type": "boolean",
+        "name": "Do you think women are as likely as men to resign?",
+        "labelTrue": "Yes",
+        "labelFalse": "No"
+       },
+       {
+        "type": "boolean",
+        "name": "Do you think women are as likely as men to get fired?",
+        "labelTrue": "Yes",
+        "labelFalse": "No"
+       },
+       {
+        "type": "boolean",
+        "name": "Do you think or organisation is concerned regarding gender inequalities?",
+        "labelTrue": "Yes",
+        "labelFalse": "No"
+       },
+       {
+        "type": "boolean",
+        "name": "Has your company done anything to address gender inequalities?",
+        "labelTrue": "Yes",
+        "labelFalse": "No"
+       },
+       {
+        "type": "boolean",
+        "name": "Would your employer provide your parental leave?",
+        "labelTrue": "Yes",
+        "labelFalse": "No"
+       },
+       {
+        "type": "boolean",
+        "name": "Would you be penalised if you were to have a child?",
+        "labelTrue": "Yes",
+        "labelFalse": "No"
+       },
+       {
+        "type": "boolean",
+        "name": "Have you ever been harassed in your workplace?",
+        "labelTrue": "Yes",
+        "labelFalse": "No"
+       },
+       {
+        "type": "boolean",
+        "name": "Does your company have the right support system to handle this kind of situations?",
+        "labelTrue": "Yes",
+        "labelFalse": "No"
+       },
+       {
+        "type": "boolean",
+        "name": "Does your company have support systems for people that suffer domestic abuse?",
+        "labelTrue": "Yes",
+        "labelFalse": "No"
+       }
+      ]
+     },
+     {
+      "name": "page2"
+     }
+    ]
+   }
+]
