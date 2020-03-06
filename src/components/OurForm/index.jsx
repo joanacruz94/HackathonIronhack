@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { Form } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import OurInput from './../OurInput';
+import './style.scss';
 
 class OurForm extends Component {
     constructor(){
@@ -41,10 +42,10 @@ class OurForm extends Component {
         this.handleSubmission = this.handleSubmission.bind(this);
     }
 
-    incrementId(){
-        this.idInput++;
-        return this.idInput;
-    }
+  incrementId() {
+    this.idInput++;
+    return this.idInput;
+  }
 
     changeAnswersState(inputName, value){
         this.setState(previousState => {
