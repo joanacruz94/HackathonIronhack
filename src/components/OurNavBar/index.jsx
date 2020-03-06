@@ -4,7 +4,7 @@ import { Nav } from 'react-bootstrap';
 import { NavDropdown } from 'react-bootstrap';
 import './style.scss';
 
-export class OurNavBar extends Component {
+class OurNavBar extends Component {
   constructor() {
     super();
     this.state = {

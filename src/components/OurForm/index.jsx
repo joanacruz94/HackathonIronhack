@@ -58,12 +58,17 @@ class OurForm extends Component {
     handleSubmission(){
         const submission = {...this.state};
         this.props.addData(submission);
+        this.handleChange();
     }
 
     createKeys(){
         let array = [];
         for(let i = 1; i < 28; i++) array.push("q" + i);
         return array;
+    }
+
+    handleChange(){
+        this.props.changeComponent('activeHome', 'activeForm');
     }
 
     render() {
