@@ -2,7 +2,26 @@ nav {
   background-color: #cf74ff;
 }
 
+.Logo {
+  width: 75px;
+}
+
 .navStyle {
   color: #fffcd4 !important;
   background-color: #cf74ff !important;
+}
+
+@media only screen and (min-width: 700px) {
+  .Logo {
+    width: 100px;
+  }
+
+  .navStyle:hover {
+    transition: ease-in-out all 0.2s;
+    -moz-transition: ease-in-out all 0.2s;
+    -webkit-transition: ease-in-out all 0.2s;
+    color: #fffe41;
+    text-decoration: none;
+    font-weight: bold;
+  }
 }

@@ -6,8 +6,7 @@ export class Home extends Component {
     return (
       <div className="homeDisplay">
         <div className="homeStatement">
-          <h1>G@PP</h1>
-          <h4>It's time to reduce it...</h4>
+          <img src="/gap.png" />
         </div>
         <div className="homeDescription">
           <img src="https://i.ytimg.com/vi/GnmPhTsviSY/maxresdefault.jpg" />

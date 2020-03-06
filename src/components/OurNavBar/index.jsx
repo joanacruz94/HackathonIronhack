@@ -38,7 +38,7 @@ class OurNavBar extends Component {
       <div>
         <Navbar collapseOnSelect expand="lg" variant="dark">
           <Navbar.Brand name="activeHome" onClick={event => this.handleClickNav(event)}>
-            G@PP
+            <img className="Logo" src="/gap.png" alt="GAPP" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
