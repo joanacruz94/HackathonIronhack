@@ -10,16 +10,15 @@ class OurInput extends Component {
   handleInputChange(event) {
     event.preventDefault();
     const inputName = event.target.name;
-    const value = event.target.value;
+    let value = event.target.value;
+    const type = event.target.type;
 
-    console.log(inputName);
-
-    this.props.answersState(inputName, value);
+    if (type === 'checkbox') value = 1;
+    this.props.answersState(inputName, Number(value));
   }
 
   render() {
     const { type, name, labelTrue, labelFalse, title, choices, idInput } = this.props;
-
     return (
       <Form.Group>
         {(name.includes('question') && <Form.Label>{title}</Form.Label>) || (
