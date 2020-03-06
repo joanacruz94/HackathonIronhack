@@ -13,6 +13,9 @@
     color: grey;
     font-style: italic;
   }
+  img {
+    width: 60%;
+  }
 }
 
 .homeDescription {
@@ -45,7 +48,7 @@
     align-items: center;
     justify-content: center;
     .homeStatement {
-      padding: 25% 0;
+      padding: 0;
       h1 {
         font-size: 64px;
       }

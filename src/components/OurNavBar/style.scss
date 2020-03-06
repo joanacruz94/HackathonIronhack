@@ -2,17 +2,19 @@ nav {
   background-color: #cf74ff;
 }
 
+.Logo {
+  width: 75px;
+}
+
 .navStyle {
   color: #fffcd4 !important;
   background-color: #cf74ff !important;
 }
 
 @media only screen and (min-width: 700px) {
-  // nav {
-  //   display: flex;
-  //   justify-content: space-between;
-  //   align-items: flex-end;
-  // }
+  .Logo {
+    width: 100px;
+  }
 
   .navStyle:hover {
     transition: ease-in-out all 0.2s;

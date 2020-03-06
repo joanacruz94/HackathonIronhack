@@ -23,9 +23,12 @@ export class Graphics extends Component {
               you - who speak out about their experiences to help others in the future & raise
               awareness across the nation.
             </p>
-            {data.map(entry => (
+            {/* {data.map(entry => (
               <p>{this.average(entry)}</p>
-            ))}
+            ))} */}
+            <img className="graph" src="/ratio.png" />
+            <p>Dummy text</p>
+            <img className="graph" src="/variables.png" />
           </div>
         </div>
 
