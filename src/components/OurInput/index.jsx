@@ -4,50 +4,24 @@ import { Form } from 'react-bootstrap';
 class OurInput extends Component {
     constructor(){
         super();
-        this.questions = this.createQuestionArray();
-        this.state = {
-            questions: this.questions
-        }
         this.handleInputChange = this.handleInputChange.bind(this);
-        this.handleSubmission = this.handleSubmission.bind(this);
     }
 
-    createQuestionArray(){
-        const array = [];
-        for(let i  = 0; i < 30; i++){
-            array.push({
-                text: ''
-            });
-        }
-        return array;
-    }
     handleInputChange(event){
-        //event.preventDefault();
-        console.log('hello')
-/*        const inputName = event.target.name
-        const value = event.target.value
+        event.preventDefault();
+        const inputName = event.target.name;
+        const value = event.target.value;
 
         console.log(inputName);
-        this.setState({
-            [inputName]: value
-        })*/
+
+        this.props.answersState(inputName, value);
+
     }
     
-    handleSubmission(event){
-        event.preventDefault();
-
-        const submission = {
-            
-        }
-
-        // TO DO --> add to our existing data of companies
-    }
 
     render() {
         const{ type, name, labelTrue, labelFalse, title, choices, idInput } = this.props;
 
-        //console.log(idInput);
-        console.log("HERE", this.state.questions);
         return (
             <Form.Group>
             {
@@ -57,10 +31,10 @@ class OurInput extends Component {
             }
             {
                 (type === "text" && 
-                <Form.Control name={idInput}></Form.Control>
+                <Form.Control type="text" onChange={this.handleInputChange} name={idInput}></Form.Control>
                 )
                 ||
-                (type === "dropdown" && <Form.Control as="select">
+                (type === "dropdown" && <Form.Control as="select" onChange={this.handleInputChange}>
                     {
                         choices.map(choice => (
                             <option>{choice.text}</option>
@@ -70,8 +44,8 @@ class OurInput extends Component {
                 ||
                 (type === "boolean" && 
                 <Fragment>
-                    <Form.Check inline label={labelTrue} type="checkbox"/>
-                    <Form.Check inline label={labelFalse} type="checkbox"/>
+                    <Form.Check name={idInput} inline label={labelTrue} type="checkbox" onChange={this.handleInputChange}/>
+                    <Form.Check name={idInput} inline label={labelFalse} type="checkbox" onChange={this.handleInputChange}/>
                 </Fragment>
                 )
             }
