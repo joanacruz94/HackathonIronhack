@@ -59,8 +59,10 @@ export class Graphics extends Component {
               </figcaption>
             </figure>
             <p>
-              As you can see there are many people who may or may not of shared similar, if not the
-              same experiences as you!{' '}
+              <i>
+                As you can see there are many people who may or may not of shared similar, if not
+                the same experiences as you!
+              </i>
             </p>
           </div>
         </div>
